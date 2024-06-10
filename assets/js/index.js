@@ -6,10 +6,16 @@ const links = document.querySelector('nav ul');
 menu_btn.addEventListener('click', () => {
     menu_btn.classList.toggle('active')
     links.classList.toggle('active')
-    document.body.classList.toggle('no_scroll')
-    // links.classList.toggle('active')
+    document.body.classList.toggle('no_scroll') 
 })
  
+links.addEventListener('click', (e) => { 
+  if (e.target.tagName === 'A') { 
+    menu_btn.classList.remove('active')
+    links.classList.remove('active')
+    document.body.classList.remove('no_scroll')
+  } 
+})
 
 
 // copied 
