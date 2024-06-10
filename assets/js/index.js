@@ -54,7 +54,7 @@ let controller = new ScrollMagic.Controller();
 
 // animation scroll effext
 const animations = [
-  { selector: ".biden_container", duration: 7000, x: -100 },
+  { selector: ".biden_container", duration: 7000, x: -200 },
   { selector: ".og_image", duration: 7000, x: 300 },
   { selector: ".trump_biden", duration: 5000, x: 300 },
   { selector: ".jet", duration: 5000, x: 300 }, 
