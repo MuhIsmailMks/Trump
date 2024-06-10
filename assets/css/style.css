@@ -503,8 +503,15 @@ footer .box_animation {
 }
 
 footer .social  .icon{
-    background-color: white;
+    background: white;
+    transition: .4s ease-in-out;
 } 
+
+footer .social:hover  .icon{
+    background: linear-gradient(180deg, #0085FF -43.04%, #FFFFFF 100%);
+
+    transition: 10s ease-in-out;
+}
 
 .footer .email::before{
     content: "";

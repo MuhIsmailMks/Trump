@@ -56,6 +56,16 @@ let controller = new ScrollMagic.Controller();
 const animations = [
   { selector: ".biden_container", duration: 7000, x: -200 },
   { selector: ".og_image", duration: 7000, x: 300 },
+  { selector: ".plan._1", duration: 10000, x: -100 },
+  { selector: ".plan._2", duration: 10000, x: 50 },
+  { selector: ".plan._3", duration: 10000, x: 50 },
+  { selector: ".plan._4", duration: 10000, x: -100 },
+  { selector: ".image_plan1", duration: 11000, x: -100 },
+  { selector: ".image_plan2", duration: 11000, x: 100 },
+  { selector: ".image_plan3", duration: 11000, x: 100 },
+  { selector: ".image_plan4", duration: 11000, x: -100 },
+  { selector: ".text_footer", duration: 11000, x: -100 },
+  { selector: ".footer_image", duration: 6000, x: -100 },
   { selector: ".trump_biden", duration: 5000, x: 300 },
   { selector: ".jet", duration: 5000, x: 300 }, 
 ];
