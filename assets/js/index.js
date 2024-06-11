@@ -19,22 +19,30 @@ links.addEventListener('click', (e) => {
 
 
 // copied 
-
 document.addEventListener('DOMContentLoaded', function() {
-    const copyContractBtns = document.querySelectorAll('.copy-contract');
+  
+  let light_left = document.querySelector('.light_left');
+  let light_right = document.querySelector('.light_right');
+
+   const copyContractBtns = document.querySelectorAll('.copy-contract');
   
     copyContractBtns.forEach(copyContractBtn => {
       copyContractBtn.addEventListener('click', function() { 
         
       let copiedMessage = copyContractBtn.querySelector('.copied');
       let contractInput = copyContractBtn.querySelector('.contractInput');
+      let movingColor_container = copyContractBtn.querySelector('.moving-color_container');
 
         contractInput.select();
         document.execCommand('copy');
     
         // Tampilkan pesan terkopikan
         copiedMessage.classList.add('flex')
-        copiedMessage.classList.remove('hidden')
+        movingColor_container.classList.add('hidden')
+        copiedMessage.classList.remove('hidden');
+
+        light_left.src = './assets/images/light_off_left.png'
+        light_right.src = './assets/images/light_off_right.png'
      
         setTimeout(function() {
           copiedMessage.classList.remove('flex')
@@ -55,7 +63,8 @@ let controller = new ScrollMagic.Controller();
 // animation scroll effext
 const animations = [
   { selector: ".biden_container", duration: 7000, x: -200 },
-  { selector: ".og_image", duration: 7000, x: 300 },
+  { selector: ".og_image", duration: 7000, x: 200 },
+  { selector: ".trumpOg_image", duration: 7000, y: 100 },
   { selector: ".plan._1", duration: 10000, x: -100 },
   { selector: ".plan._2", duration: 10000, x: 50 },
   { selector: ".plan._3", duration: 10000, x: 50 },
@@ -74,7 +83,7 @@ function adjustXValue() {
   const screenWidth = window.innerWidth;
   if (screenWidth > 1200) { 
     animations.forEach(animation => {
-      animation.x = animation.x * 4;
+      animation.x = animation.x * 4; 
     });
   }
 }
