@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // controller ScrollMagic
 let controller = new ScrollMagic.Controller();
 
-// animation scroll effext
+// animation scroll effect
 const animations = [
   { selector: ".biden_container", duration: 7000, x: -200 },
   { selector: ".og_image", duration: 7000, x: 200 },
