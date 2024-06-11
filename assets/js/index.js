@@ -1,3 +1,6 @@
+AOS.init({
+  once: true
+})
 
 // nav handler
 const menu_btn = document.querySelector('nav .menu');
@@ -18,15 +21,16 @@ links.addEventListener('click', (e) => {
 })
 
 
-// copied 
+// contract 
 document.addEventListener('DOMContentLoaded', function() {
   
   let light_left = document.querySelector('.light_left');
   let light_right = document.querySelector('.light_right');
+  let backgroundContract = document.querySelector('.backgroundContract');
 
-   const copyContractBtns = document.querySelectorAll('.copy-contract');
+  const copyContractBtns = document.querySelectorAll('.copy-contract');
   
-    copyContractBtns.forEach(copyContractBtn => {
+  copyContractBtns.forEach(copyContractBtn => {
       copyContractBtn.addEventListener('click', function() { 
         
       let copiedMessage = copyContractBtn.querySelector('.copied');
@@ -38,20 +42,59 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Tampilkan pesan terkopikan
         copiedMessage.classList.add('flex')
-        movingColor_container.classList.add('hidden')
         copiedMessage.classList.remove('hidden');
 
-        light_left.src = './assets/images/light_off_left.png'
-        light_right.src = './assets/images/light_off_right.png'
+        
+        // movingColor_container.classList.add('hidden')
+        // light_left.src = './assets/images/light_off_left.png'
+        // light_right.src = './assets/images/light_off_right.png'
      
         setTimeout(function() {
           copiedMessage.classList.remove('flex')
           copiedMessage.classList.add('hidden')
         }, 2000);
       });
-      
-    })
+  })
      
+    // JavaScript untuk mengganti gambar
+  const imagesLeft = [
+      './assets/images/light_off_left.png',
+      './assets/images/light_on_left.png', 
+  ];
+
+  const imagesRight = [
+    './assets/images/light_off_right.png',
+    './assets/images/light_on_right.png', 
+  ];
+
+  let currentIndex = 0;
+  let currentIndex2 = 0;
+  let elseTrue = false;
+
+  function changeImageLeft() { 
+      currentIndex = (currentIndex + 1) % imagesLeft.length;
+      light_left.src = imagesLeft[currentIndex];
+  }
+
+  function changeImageRight() { 
+    currentIndex2 = (currentIndex2 + 1) % imagesRight.length;
+    light_right.src = imagesRight[currentIndex2];
+  }
+
+  function bgContract() { 
+    elseTrue = !elseTrue
+    if(elseTrue === false){
+      backgroundContract.classList.add('hidden')
+    } else {
+      backgroundContract.classList.remove('hidden')
+    }
+  }
+
+  setInterval(changeImageLeft, 2000);
+  setInterval(changeImageRight, 2000);
+  setInterval(bgContract, 2000);
+
+
   });
 
 
@@ -63,7 +106,7 @@ let controller = new ScrollMagic.Controller();
 // animation scroll effect
 const animations = [
   { selector: ".biden_container", duration: 7000, x: -200 },
-  { selector: ".og_image", duration: 7000, x: 200 }, 
+  // { selector: ".og_image", duration: 7000, x: 200 }, 
   { selector: ".plan._1", duration: 10000, x: -100 },
   { selector: ".plan._2", duration: 10000, x: 50 },
   { selector: ".plan._3", duration: 10000, x: 50 },

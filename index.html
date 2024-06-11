@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
@@ -101,13 +103,13 @@
 
                 <div class="social_media_container flex items-center relative gap-[.35rem]">
                    
-                    <a href="https://x.com/FirstTrumpToken" target="_blank" class="social opacity-0 absolute md:relative md:opacity-100 flex cursor-pointer h-[55px] w-[55px] rounded-full border-[3px] border-black items-center justify-center bg-[#7CFFA1]">
+                    <a href="https://x.com/FirstTrumpToken" target="_blank" class="social opacity-0 duration-200 hover:scale-[1.1] absolute md:relative md:opacity-100 flex cursor-pointer h-[55px] w-[55px] rounded-full border-[3px] border-black items-center justify-center bg-[#7CFFA1]">
                         <img src="./assets/images/x-icon.svg" alt="twitter" class="relative h-auto w-[40%]">
                     </a>
-                    <a href="https://t.me/FirstTrump" target="_blank" class="social opacity-0 absolute md:relative md:opacity-100 flex cursor-pointer h-[55px] w-[55px] rounded-full border-[3px] border-black items-center justify-center bg-[#7CE7FF]">
+                    <a href="https://t.me/FirstTrump" target="_blank" class="social opacity-0 duration-200 hover:scale-[1.1] absolute md:relative md:opacity-100 flex cursor-pointer h-[55px] w-[55px] rounded-full border-[3px] border-black items-center justify-center bg-[#7CE7FF]">
                         <img src="./assets/images/tele-icon.svg" alt="telegram" class="relative h-auto w-[50%]">
                     </a>
-                    <a href="https://etherscan.io/" target="_blank" class="social opacity-0 absolute md:relative md:opacity-100 flex cursor-pointer h-[55px] w-[55px] rounded-full border-[3px] border-black items-center justify-center bg-[#fff]">
+                    <a href="https://etherscan.io/" target="_blank" class="social opacity-0 duration-200 hover:scale-[1.1] absolute md:relative md:opacity-100 flex cursor-pointer h-[55px] w-[55px] rounded-full border-[3px] border-black items-center justify-center bg-[#fff]">
                         <img src="./assets/images/etherscan.png" alt="telegram" class="relative h-auto w-[50%]">
                     </a>
                 </div> 
@@ -203,6 +205,7 @@
                 </div>
 
                 <div class="ca flex justify-center items-center absolute w-full left-0 top-0 h-full z-[1]  ">  
+
                     <div class="text  cursor-pointer z-[1] relative w-[250px] h-[42px] md:w-[400px] xl:w-[640px] xl:h-[70px]   flex justify-center items-center copy-contract ">
 
                         <div class="copied hidden absolute bg-[#1f921f] top-[-50px] h-[40px] w-[70px]  justify-center items-center ">
@@ -214,7 +217,7 @@
                             <img src="./assets/images/copyIcon.svg" alt="" class="h-auto object-contain w-[20px] md:w-[25px] lg:w-[30px] min-[1700px]:w-[1vw]">
                         </div>
 
-                     <div class="moving-color_container z-[0] h-full border-[1px] xl:border-[3px] border-black">
+                     <div class="moving-color_container backgroundContract z-[0] h-full border-[1px] xl:border-[3px] border-black">
                         <div class="moving-color w-full ">
                             <span></span>
                             <span></span>
@@ -271,7 +274,9 @@
              <img src="./assets/images/og_trump.png" alt="trump" class="h-auto object-contain relative z-[2] w-full xl:w-[90%] trumpOg_image">
 
             <!-- text -->
-             <img src="./assets/images/og_text.png" alt="trump" class="h-auto object-contain absolute z-[2] w-[80%] bottom-[5%] og_image left-[10%]">
+             <img src="./assets/images/og_text.png" alt="trump" class="h-auto object-contain absolute z-[2] w-[80%] bottom-[5%] og_image left-[10%]" data-aos="fade-down"
+             data-aos-duration="1000"
+             data-aos-delay="1000">
 
          </section>
 
@@ -334,7 +339,9 @@
 
             <!-- trump bg -->
             <div class="bg w-full h-full absolute left-0 top-0 flex justify-center">
-                <img src="./assets/images/trumpnomics.png" alt="trumpnomics" class="h-auto object-contain w-[80%] xl:w-[1206px] min-[2000px]:w-[40%] absolute z-0 top-0">
+                <img src="./assets/images/trumpnomics.png" alt="trumpnomics" class="h-auto object-contain w-[80%] xl:w-[1206px] min-[2000px]:w-[40%] absolute z-0 top-0" data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1000">
                 <img src="./assets/images/trumpnomics_text.png" alt="trumpnomics" class="h-auto object-contain w-[90%] xl:w-[1077.06px] absolute z-0 top-[30%] xl:top-[40%]">
             </div>
 
@@ -518,22 +525,24 @@
 
             <!-- copyright -->
             <div class="w-full copyright h-[30px] md:h-[83px] absolute bottom-0 left-0 bg-[#151515] ink-free_font flex justify-center items-center text-white text-[11px] xl:text-[32px] gap-[2rem]">
-                <p class="md:w-[30%] md:text-center">Copyright © $TRUMP 2024 </p>
+                <p class="w-auto md:w-[30%] md:text-center">Copyright © $TRUMP 2024 </p>
                 <div class="h-[50%] md:h-[50px] w-auto flex gap-[.3rem] md:gap-[1rem] justify-center relative items-center">
                     <span class="h-full relative bg-white w-[1px] md:w-[2px]"></span>
                     <span class="h-full relative bg-white w-[1px] md:w-[2px]"></span>
                 </div>
-                <p class="md:w-[30%] md:pl-[2rem]">support@firsttrump.com</p>
+                <p class="w-auto md:w-[30%] md:pl-[2rem]">support@firsttrump.com</p>
             </div>
  
         </footer> 
 
     </div>
 
-  <!-- scroll magic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+     <!-- aos js scroll animation -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- scroll magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
 
   <!-- script -->
