@@ -106,7 +106,6 @@ let controller = new ScrollMagic.Controller();
 // animation scroll effect
 const animations = [
   { selector: ".biden_container", duration: 7000, x: -200 },
-  // { selector: ".og_image", duration: 7000, x: 200 }, 
   { selector: ".plan._1", duration: 10000, x: -100 },
   { selector: ".plan._2", duration: 10000, x: 50 },
   { selector: ".plan._3", duration: 10000, x: 50 },

@@ -559,7 +559,7 @@ footer .social:hover  .icon{
 @media screen and (max-width:768px){
     /* animation */
     .marquee {
-        height: 81px;
+        height: 71px;
     }
 
     .marquee span{
