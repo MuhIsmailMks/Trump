@@ -117,7 +117,7 @@ const animations = [
   { selector: ".text_footer", duration: 11000, x: -100 },
   { selector: ".footer_image", duration: 6000, x: -100 },
   { selector: ".trump_biden", duration: 3000, x: 600 },
-  { selector: ".jet", duration: 4000, x: 600, y: -50, rotate: -60 }, 
+  { selector: ".jet", duration: 2000, x: 600, y: -100, rotate: -60 }, 
   // { selector: ".og_image", duration: 5000,  y: 300 }, 
 ];
 
