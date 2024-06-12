@@ -343,6 +343,14 @@ nav .logo_nav p{
     -webkit-text-stroke: 2px black;
     font-family: var(--font-p22_bold);
 }
+
+nav ul li a{
+    transition: .2s ease-in-out;
+}
+
+nav ul li:hover a{
+    color: white;
+}
  
 /* menu button */ 
 .menu-button span:nth-child(1) {
