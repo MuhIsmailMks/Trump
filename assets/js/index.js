@@ -117,27 +117,48 @@ const animations = [
   { selector: ".text_footer", duration: 11000, x: -100 },
   { selector: ".footer_image", duration: 6000, x: -100 },
   { selector: ".trump_biden", duration: 5000, x: 300 },
-  { selector: ".jet", duration: 5000, x: 300 }, 
+  { selector: ".jet", duration: 5000, x: 500, y: -50, rotate: -60 }, 
+  // { selector: ".og_image", duration: 5000,  y: 300 }, 
 ];
+
+
+
+
 
 function adjustXValue() {
   const screenWidth = window.innerWidth;
   if (screenWidth > 1200) { 
     animations.forEach(animation => {
-      animation.x = animation.x * 4; 
+      if (animation.hasOwnProperty('x')) {  
+        animation.x = animation.x * 4;
+      }
+      if (animation.hasOwnProperty('y')) { 
+        animation.y = animation.y * 2;
+      }
+      if (animation.hasOwnProperty('rotate')) { // Adjust rotate value if it exists
+        animation.rotate = animation.rotate; // Adjust as needed, here it's kept same
+      }
     });
   }
 }
- 
+
 adjustXValue();
 window.addEventListener('resize', adjustXValue);
 
-
-
-var tween1, tween2,tween3;
-
 animations.forEach(animation => {
-  var tween = gsap.to(animation.selector, {duration: 300, x: animation.x});
+  // Create the tween object with conditionals for `y`
+  var tweenParams = { duration: 300, x: animation.x };
+  if (animation.hasOwnProperty('x')) {
+    tweenParams.x = animation.x;
+  }
+  if (animation.hasOwnProperty('y')) {
+    tweenParams.y = animation.y;
+  }
+  if (animation.hasOwnProperty('rotate')) {
+    tweenParams.rotate = animation.rotate;
+  }
+  
+  var tween = gsap.to(animation.selector, tweenParams);
 
   var scene = new ScrollMagic.Scene({
     triggerElement: animation.selector,
@@ -146,3 +167,34 @@ animations.forEach(animation => {
   .setTween(tween)
   .addTo(controller);
 });
+
+
+
+
+
+// function adjustXValue() {
+//   const screenWidth = window.innerWidth;
+//   if (screenWidth > 1200) { 
+//     animations.forEach(animation => {
+//       animation.x = animation.x * 4; 
+//     });
+//   }
+// }
+ 
+// adjustXValue();
+// window.addEventListener('resize', adjustXValue);
+
+
+
+// var tween1, tween2,tween3;
+
+// animations.forEach(animation => {
+//   var tween = gsap.to(animation.selector, {duration: 300, x: animation.x});
+
+//   var scene = new ScrollMagic.Scene({
+//     triggerElement: animation.selector,
+//     duration: animation.duration
+//   })
+//   .setTween(tween)
+//   .addTo(controller);
+// });
