@@ -198,15 +198,17 @@
 
                 <!-- background -->
                 <div class="bg absolute  top-0 h-full max-w-[1500px] w-[90%] lg:w-[80%] z-[0] flex justify-center items-center"> 
-                    <img src="./assets/images/light_on_left.png" alt="" class="h-auto object-contain light_left w-[100px] z-[1] md:w-[200px] xl:w-[400px] absolute left-0 bottom-0">
-                    <img src="./assets/images/light_on_right.png" alt="" class="h-auto object-contain light_right w-[100px] z-[1] md:w-[200px] xl:w-[400px] absolute right-0 bottom-0">
+                    <!-- light -->
+                    <img src="./assets/images/light_on_left.png" alt="" class="h-auto object-contain light_left w-[100px] z-[1] min-[550px]:w-[160px] md:w-[200px] xl:w-[400px] absolute left-0 bottom-0">
+                    <img src="./assets/images/light_on_right.png" alt="" class="h-auto object-contain light_right w-[100px] z-[1] min-[550px]:w-[160px] md:w-[200px] xl:w-[400px] absolute right-0 bottom-0">
 
-                    <img src="./assets/images/rock.png" alt="rock" class="h-auto object-contain absolute w-[310px] md:w-[500px] xl:w-[800px]">
+                    <!-- rock bg -->
+                    <img src="./assets/images/rock.png" alt="rock" class="h-auto object-contain absolute w-[310px] min-[550px]:w-[400px] md:w-[500px] xl:w-[800px]">
                 </div>
 
                 <div class="ca flex justify-center items-center absolute w-full left-0 top-0 h-full z-[1]  ">  
 
-                    <div class="text  cursor-pointer z-[1] relative w-[250px] h-[30px] md:w-[400px] xl:w-[640px] xl:h-[70px]   flex justify-center items-center copy-contract ">
+                    <div class="text  cursor-pointer z-[1] relative w-[250px] h-[32px] min-[550px]:w-[320px] md:w-[400px] xl:w-[640px] xl:h-[70px]   flex justify-center items-center copy-contract ">
 
                         <div class="copied hidden absolute bg-[#1f921f] top-[-50px] h-[40px] w-[70px]  justify-center items-center ">
                             <span class="text-[.8rem] w-[95%] h-[90%] bg-green-500 flex justify-center items-center ink-free_font">copied</span>
@@ -236,7 +238,7 @@
         </section>
 
         <!-- about section -->
-        <section id="about" class="w-full h-[1000px] md:h-[200vw] xl:h-[2130px] min-[1700px]:h-[120vw] relative bg-[#9CD85D] flex flex-col   items-center">
+        <section id="about" class="w-full h-[1000px] min-[500px]:h-[200vw] md:h-[230vw] lg:h-[1800px] xl:h-[2130px] min-[1700px]:h-[120vw] relative bg-[#9CD85D] flex flex-col   items-center">
  
 
             <!-- trump and biden -->
@@ -248,7 +250,7 @@
             <div class="bg_top content_about absolute  h-auto top-[62vw] xl:top-[40%] min-[1600px]:top-[45%] min-[2000px]:w-[50%] min-[2000px]:top-[53vw] z-[2] flex justify-center" data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="800">
-                <p class="text-white text-center tracking-[1px] w-[90%] md:w-[80%] xl:w-[985px] text-[19px] md:text-[35px] xl:text-[40px]  min-[2500px]:w-[100%]  min-[2500px]:text-[2vw]">YUGE - TRUMP is making waves as the first-ever Trump contract on the Ethereum blockchain, and it’s bringing the snazzy $TRUMP ticker along for the ride! This isn’t just any old crypto project—this is Trump like you've never seen before, all decked out in blockchain bling. Whether you’re a crypto enthusiast or just a fan of all things Trump, YUGE - TRUMP is your ticket to ride the wild world of decentralized finance with a splash of flair and a whole lot of fun.</p>
+                <p class="text-white text-center tracking-[1px] w-[90%] md:w-[80%] xl:w-[985px] text-[19px] min-[500px]:text-[25px] md:text-[35px] xl:text-[40px]  min-[2500px]:w-[100%]  min-[2500px]:text-[2vw]">YUGE - TRUMP is making waves as the first-ever Trump contract on the Ethereum blockchain, and it’s bringing the snazzy $TRUMP ticker along for the ride! This isn’t just any old crypto project—this is Trump like you've never seen before, all decked out in blockchain bling. Whether you’re a crypto enthusiast or just a fan of all things Trump, YUGE - TRUMP is your ticket to ride the wild world of decentralized finance with a splash of flair and a whole lot of fun.</p>
  
             </div>
 
@@ -482,20 +484,20 @@
         <footer class="footer  relative w-full h-[600px] min-[500px]:h-[700px] md:h-[800px] xl:h-[880px] min-[1500px]:h-[900px] max-w-[100%] flex overflow-hidden justify-center items-end">
 
             <!-- bg and text image -->
-            <div class="bg w-full h-[20%] left-0 top-[10%] flex absolute items-center">
-                <img src="./assets/images/footer_text.png" alt="text footer" class="w-[198.94px] md:w-[343.49px] h-auto object-contain absolute left-[40%] lg:left-[6%] text_footer">
+            <div class="bg w-full h-[20%] z-[1] left-0 top-[10%] flex absolute items-center">
+                <img src="./assets/images/footer_text.png" alt="text footer" class="w-[198.94px] md:w-[343.49px] h-auto object-contain absolute left-[40%] lg:left-[6%] text_footer z-[2]">
                 <!-- cloud -->
-                <img src="./assets/images/cloud2.png" alt="cloud" class="w-[226px] object-contain h-auto absolute right-[-40px] hidden lg:block left_animation_cloud">
-                <img src="./assets/images/cloud_left.png" alt="cloud" class="w-[186px] object-contain h-auto absolute right-[50%] hidden lg:block right_animation_cloud">
+                <img src="./assets/images/cloud2.png" alt="cloud" class="w-[226px] object-contain h-auto absolute right-[-40px] hidden lg:block left_animation_cloud z-[0]">
+                <img src="./assets/images/cloud_left.png" alt="cloud" class="w-[186px] object-contain h-auto absolute right-[50%] hidden lg:block right_animation_cloud z-[0]">
             </div>
 
             <!-- image -->
-            <div class="contract footer_image absolute top-[60px] min-[500px]:top-[190px] md:top-[250px] lg:top-0 right-[-5%] w-full lg:w-[50%] h-full">
-                <img src="./assets/images/footer_image.png" alt="contract" class="h-auto object-cover md:object-contain w-full min-[500px]:w-[400px] xl:w-[814px] absolute right-0 top-[-5%] footer_image_animation">
+            <div class="contract z-[8] footer_image absolute top-[60px] min-[500px]:top-[190px] md:top-[250px] lg:top-0 right-[-5%] w-full lg:w-[50%] h-full">
+                <img src="./assets/images/footer_image.png" alt="contract" class="h-auto object-cover md:object-contain w-[400px] max-w-full min-[500px]:w-[400px] min-[1024px]:w-[700px] xl:w-[814px] absolute right-0 top-[-5%] footer_image_animation">
             </div>
 
             <!-- social media -->
-            <div class="h-[30%] w-full flex justify-center xl:justify-start xl:pl-[10%] items-center absolute top-[380px] md:top-[420px] xl:top-[320px] gap-[.75rem] xl:gap-[3.5rem]">
+            <div class="h-[30%] w-full flex justify-center xl:justify-start xl:pl-[10%] items-center absolute top-[380px] min-[500px]:top-[450px] md:top-[420px] xl:top-[320px] gap-[.75rem] xl:gap-[3.5rem]">
 
                <div class="relative" data-aos="zoom-in"
                data-aos-duration="1000"
@@ -534,7 +536,7 @@
             </div>
 
             <!-- buy button -->
-            <div class="box_animation absolute bottom-[45px] md:bottom-[100px] w-[90%] md:w-[388px] h-[30.6px] md:h-[60.05px] xl:w-[1302px] xl:h-[120px]  justify-center items-center overflow-hidden flex">
+            <div class="box_animation absolute bottom-[45px] md:bottom-[100px] w-[90%] md:w-[388px] h-[30.6px] md:h-[60.05px] min-[900px]:w-[80%] xl:w-[1302px] xl:h-[120px]  justify-center items-center overflow-hidden flex">
                 <p class="relative duration-300 text-[#FFFFFF] z-[10] text-[16.73px] md:text-[24px] xl:text-[64px] pl-[.5rem] pt-[.55rem]">Buy $TRUMP</p> 
                 <div class="moving-color_container">
                     <div class="moving-color">

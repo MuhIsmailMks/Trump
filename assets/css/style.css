@@ -448,9 +448,9 @@ nav ul::after{
 
 /* about section */
  .content_about p{
-    -webkit-text-stroke: 2.5px black;
-    text-shadow: 4px 4px 8px #1C1B1B;
- }
+        -webkit-text-stroke: .7px black;
+        text-shadow: 1px 1px 4px #1C1B1B;
+} 
 
  .flag_animation{
     animation:  flag_animated .8s linear infinite; 
@@ -566,13 +566,7 @@ footer .social:hover  .icon{
         font-size: 24px;
         -webkit-text-stroke: .9px black;
     }
-    
-    /* about section */
-    .content_about p{
-        -webkit-text-stroke: .7px black;
-        text-shadow: 1px 1px 4px #1C1B1B;
-    } 
-
+     
     /* footer */
     footer .box_animation p{
         -webkit-text-stroke: 1.5px black;
@@ -582,6 +576,15 @@ footer .social:hover  .icon{
     
 }
 
+
+@media screen and (min-width:768px) {
+        /* about section */
+        footer .box_animation p,
+        .content_about p{
+            -webkit-text-stroke: 1.5px black;
+            text-shadow: 2px 2px 5px #1C1B1B;
+         }
+}
 
 @media screen and (min-width:1024px) {
     nav ul,
@@ -601,5 +604,15 @@ footer .social:hover  .icon{
         background: transparent;
     }
  
+    /* about section */
+    .content_about p{
+        -webkit-text-stroke: 2.5px black;
+        text-shadow: 4px 4px 8px #1C1B1B;
+     }
+     footer .box_animation p{
+
+        -webkit-text-stroke: 2.5px black;
+        text-shadow: 4px 4px 8px #1c1b1b00;
+     }
 }
 
