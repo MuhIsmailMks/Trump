@@ -612,6 +612,11 @@ footer .social:hover  .icon{
 }
 
 @media screen and (min-width:1024px) {
+
+    body.no_scroll{
+        overflow: auto;
+    }
+    /* navbar */
     nav ul,
     nav ul.active{
         clip-path: none; 
