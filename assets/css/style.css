@@ -400,8 +400,11 @@ nav ul.active{
     opacity: 1; 
 }
 
-.menu-button.active span{
+.menu-button span{
     background-color: white;
+    border: .75px solid rgba(0, 0, 0, 0.527);
+    border-radius: 10px;
+    height: 4px;
 }
 
 nav ul li a{
