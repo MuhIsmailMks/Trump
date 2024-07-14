@@ -1,5 +1,20 @@
 AOS.init({
   once: true
+});
+
+// pop up
+const popUp_container = document.querySelector('.pop-up');
+const popUp_containerBtn = document.querySelector('.popUp_container');
+const image_popUp_container = document.querySelector('.popUp_container .image_popUp');
+const audioElement = document.getElementById('background-music');
+
+
+popUp_containerBtn.addEventListener('click', () =>{
+    popUp_container.classList.remove('flex')
+    popUp_container.classList.add('hidden');
+
+    audioElement.play();
+    isMusicPlaying = true;  
 })
 
 // nav handler
@@ -98,23 +113,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 // button music
-const audioElement = document.getElementById('background-music');
-document.addEventListener('DOMContentLoaded', function() {
-  const btnMusic = document.getElementById("toggle-music-btn")
-  let isMusicPlaying = false; 
 
-    btnMusic.addEventListener('click', () => {
-    btnMusic.querySelector('span').classList.toggle('hidden');
-    if (isMusicPlaying === false) { 
-        audioElement.play();
-        isMusicPlaying = true;  
-    } else { 
-        audioElement.pause();
-        isMusicPlaying = false;   
-    }
-    })
+// document.addEventListener('DOMContentLoaded', function() {
+//   const btnMusic = document.getElementById("toggle-music-btn")
+//   let isMusicPlaying = false; 
 
-})
+//     btnMusic.addEventListener('click', () => {
+//     btnMusic.querySelector('span').classList.toggle('hidden');
+//     if (isMusicPlaying === false) { 
+//         audioElement.play();
+//         isMusicPlaying = true;  
+//     } else { 
+//         audioElement.pause();
+//         isMusicPlaying = false;   
+//     }
+//     })
+
+// })
 
 
 
