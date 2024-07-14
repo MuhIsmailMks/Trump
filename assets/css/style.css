@@ -250,10 +250,6 @@ footer .box_animation:hover{
     overflow: hidden;
 }
 
-footer .moving-color_container{
-    width: 99.5%;
-}
-
 .moving-color {
     width: 100%;
     height: 290%; 
@@ -275,6 +271,12 @@ footer .moving-color_container{
     height: 14%;
     background-color: white;
     position: relative;
+}
+
+
+
+footer .moving-color_container{
+    width: 99.5%;
 }
 
 @keyframes move-colors {

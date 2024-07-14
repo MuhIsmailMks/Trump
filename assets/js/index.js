@@ -118,7 +118,6 @@ const animations = [
   { selector: ".footer_image", duration: 6000, x: -100 },
   { selector: ".trump_biden", duration: 3000, x: 600 },
   { selector: ".jet", duration: 2000, x: 600, y: -100, rotate: -60 }, 
-  // { selector: ".og_image", duration: 5000,  y: 300 }, 
 ];
 
 
@@ -135,8 +134,8 @@ function adjustXValue() {
       if (animation.hasOwnProperty('y')) { 
         animation.y = animation.y * 2;
       }
-      if (animation.hasOwnProperty('rotate')) { // Adjust rotate value if it exists
-        animation.rotate = animation.rotate; // Adjust as needed, here it's kept same
+      if (animation.hasOwnProperty('rotate')) { 
+        animation.rotate = animation.rotate; 
       }
     });
   }
@@ -170,31 +169,3 @@ animations.forEach(animation => {
 
 
 
-
-
-// function adjustXValue() {
-//   const screenWidth = window.innerWidth;
-//   if (screenWidth > 1200) { 
-//     animations.forEach(animation => {
-//       animation.x = animation.x * 4; 
-//     });
-//   }
-// }
- 
-// adjustXValue();
-// window.addEventListener('resize', adjustXValue);
-
-
-
-// var tween1, tween2,tween3;
-
-// animations.forEach(animation => {
-//   var tween = gsap.to(animation.selector, {duration: 300, x: animation.x});
-
-//   var scene = new ScrollMagic.Scene({
-//     triggerElement: animation.selector,
-//     duration: animation.duration
-//   })
-//   .setTween(tween)
-//   .addTo(controller);
-// });
