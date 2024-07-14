@@ -97,6 +97,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
+// button music
+const audioElement = document.getElementById('background-music');
+document.addEventListener('DOMContentLoaded', function() {
+  const btnMusic = document.getElementById("toggle-music-btn")
+  let isMusicPlaying = false; 
+
+    btnMusic.addEventListener('click', () => {
+    btnMusic.querySelector('span').classList.toggle('hidden');
+    if (isMusicPlaying === false) { 
+        audioElement.play();
+        isMusicPlaying = true;  
+    } else { 
+        audioElement.pause();
+        isMusicPlaying = false;   
+    }
+    })
+
+})
 
 
 
