@@ -33,20 +33,24 @@
             letter-spacing: 1px;
         }
 
+        .enter.box_animation{clip-path: polygon(6% 0, 94% 0, 100% 100%, 0% 100%);
+            background-color: red;
+        }
+
     </style>
 
     <!-- pop up site -->
     <section class="pop-up  z-[9999] bg-[#000000ab] fixed w-full left-0 top-0 h-full  flex justify-center items-center overflow-y-auto">
 
-        <div class="popUp_container relative pt-[5rem] md:pt-0 xl:w-[85%] w-[90%] h-[90%] overflow-hidden flex justify-center items-center flex-col rounded-[20px]"> 
+        <div class="popUp_container relative pt-[5rem] md:pt-0 xl:w-[85%] w-[90%] h-[600px] max-h-[90%] md:h-[90%] overflow-hidden flex justify-center items-center flex-col rounded-[20px]"> 
 
             <!-- bg -->
             <img src="./assets/images/bg_popup.png" alt="pop up" class="w-full h-[500px] lg:h-auto absolute  object-cover rounded-[20px]"> 
 
-            <div class="pop-btns w-full relative flex items-end justify-center   gap-[2rem] h-[50%] pt-[30vw]">
+          
         
-                <button  class="enter box_animation relative w-[150px] md:w-[238px] h-[70px] md:h-[80.05px] min-[1500px]:h-[90px]  min-[1500px]:w-[270px] justify-center items-center overflow-hidden  flex">
-                    <p class="relative duration-300 text-[#FFFFFF] z-[10] text-[27px] md:text-[4vw] min-[1500px]:text-[50px] pl-[.5rem] pt-[.55rem]">ENTER</p> 
+                <button  class="enter absolute bottom-[-84px] lg:bottom-[-7vw] box_animation relative w-[290px] max-w-[90vw] lg:w-[26vw] h-[135px] lg:h-[12vw] justify-center items-center overflow-hidden  flex">
+                    <p class="relative duration-300 text-[#FFFFFF] z-[10] text-[10vw] lg:text-[4vw]  pl-[.5rem] pt-[.55rem]">ENTER</p> 
                     <div class="moving-color_container">
                         <div class="moving-color">
                             <span></span>
@@ -57,8 +61,7 @@
                     </div>
                 </button>
 
-
-            </div>
+ 
 
         </div>
     

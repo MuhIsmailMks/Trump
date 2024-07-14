@@ -222,7 +222,7 @@ footer .box_animation::before{
 }
 
 
-.box_animation:hover{
+.box_animation:not(.enter.box_animation):hover{
     transform: 
         perspective(300px)
         rotateY(20deg)
