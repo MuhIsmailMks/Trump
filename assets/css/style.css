@@ -336,6 +336,23 @@ footer .moving-color_container{
 
 
 /* section styling */
+/* pop up */
+.enter{
+    clip-path: polygon(6% 0, 94% 0, 100% 100%, 0% 100%); 
+    -webkit-text-stroke: 1px rgb(255, 255, 255); 
+}
+
+.enter::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+
+    width: 102%;
+    height: 102%;
+
+    background-color: black;
+}
 /* navbar */
 nav{
     font-family: var(--font-ink-free);
