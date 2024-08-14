@@ -102,10 +102,7 @@ body.no_scroll{
     height: 166px;
  
     gap: 0;
-    padding-top: .5rem;
-
-    /* border-top: 3px solid rgba(0, 0, 0, 0.651);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.651); */
+    padding-top: .5rem; 
 }
 
 .text_slide_container::before{
